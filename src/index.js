@@ -1,6 +1,6 @@
 function updateTime() {
   // Los Angeles
-  let losAngelesElement = document.querySelector("#los-angeles");
+  let losAngelesElement = document.querySelector("#losangelo");
   if (losAngelesElement) {
     let losAngelesDateElement = losAngelesElement.querySelector(".date");
     let losAngelesTimeElement = losAngelesElement.querySelector(".time");
@@ -26,6 +26,8 @@ function updateTime() {
   }
 }
 
+
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
@@ -48,6 +50,7 @@ function updateCity(event) {
 }
 
 updateTime();
+
 setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
